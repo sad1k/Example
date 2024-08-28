@@ -1,0 +1,50 @@
+.servicesCard {
+  cursor: pointer;
+  position: relative;
+  width: 270px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  border-radius: 15px;
+  background: rgba(30, 30, 30, 1);
+  background-clip: padding-box;
+  border: solid 2px transparent;
+  .title {
+    p {
+      font-family: Montserrat "Open-sans";
+      margin: 0px;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: left;
+    }
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.servicesCard.gradientBorder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px; /* !importanté */
+  border-radius: inherit; /* !importanté */
+  background: linear-gradient(119.43deg, #ed1928 0%, #e60254 100%);
+}

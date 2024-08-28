@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    color: rgba(189, 189, 189, 1);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  @media (max-width: 450px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 10px;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+}

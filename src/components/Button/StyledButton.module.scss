@@ -1,0 +1,54 @@
+.styledButton {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ed1928; /* Text color */
+  background-color: transparent; /* Button background */
+  border: 2px solid #ed1928; /* Border color */
+  border-radius: 30px; /* Rounded corners */
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.styledButton.white {
+  color: #fff;
+  border-color: #fff;
+  @media (max-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.button {
+  width: 100%;
+  max-width: 284px;
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  background: linear-gradient(119.43deg, #ed1928, #e60254);
+  border: 2px solid #ed1928;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  @media (max-width: 586px) {
+    max-width: none;
+    width: 50%;
+  }
+  @media (max-width: 600px) {
+    max-width: none;
+    width: 100%;
+  }
+}

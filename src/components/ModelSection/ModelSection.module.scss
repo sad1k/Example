@@ -1,0 +1,58 @@
+.modelSection {
+  padding: 0px 0px 100px;
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 46px;
+      font-weight: 700;
+      text-align: center;
+    }
+    h4 {
+      padding: 20px 0px 0px;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .models {
+      padding: 50px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url("/src/assets/smallBackground.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      opacity: 0.05;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .container {
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+      }
+      h4 {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}

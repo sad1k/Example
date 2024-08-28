@@ -1,0 +1,11 @@
+.subSelect {
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+  > div:nth-child(1) {
+    padding-right: 0px;
+  }
+  > div:nth-child(2) {
+    padding-left: 0px;
+  }
+}

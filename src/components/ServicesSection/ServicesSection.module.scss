@@ -1,0 +1,77 @@
+.servicesSection {
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 46px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    h4 {
+      padding-top: 20px;
+      width: 70%;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .services {
+      padding: 50px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+    }
+  }
+  .phone {
+    position: absolute;
+    bottom: -270px;
+    right: -180px;
+    transform: rotate(-11.8deg) scale(1.2);
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 420px) {
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url("/src/assets/servicesBackground.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.02;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+      }
+      h4 {
+        width: 95%;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.07px;
+        text-align: center;
+      }
+      .services {
+        justify-content: center;
+      }
+    }
+  }
+}

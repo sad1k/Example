@@ -1,0 +1,49 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
+
+:root {
+  font-family: "Open Sans", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(93.53deg, #292929 49%, #3c3c3c 98.16%);
+  $color-gradient: linear-gradient(#ed1928 100%, #e60254 100%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.gradientText {
+  background-color: #ffffff;
+  background-image: linear-gradient(119.43deg, #ed1928 0%, #e60254 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

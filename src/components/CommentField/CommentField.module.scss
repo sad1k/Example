@@ -1,0 +1,22 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: left;
+  input {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: left;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(189, 189, 189, 1);
+  }
+}
+
+.padding {
+  padding: 30px 50px 0px;
+}
