@@ -1,7 +1,6 @@
 import { IOpenModal } from "pages/MainPage/MainPage";
 import styles from "./FormSection.module.scss";
 import { Form } from "components/Form/Form";
-import { CommentField } from "components/CommentField/CommentField";
 
 export const FormSection = ({ openModal }: IOpenModal) => {
   return (

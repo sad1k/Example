@@ -21,7 +21,7 @@ export const ServicesSection = ({ openModal }: IOpenModal) => {
         </h4>
         <div className={styles.wrapper}>
           <div onClick={handleClick} className={styles.services}>
-            {services.map((s, i) => (
+            {services.map((_, i) => (
               <ServiceCard
                 days="1-3 дня"
                 price="1 000 - 3 000 ₽"

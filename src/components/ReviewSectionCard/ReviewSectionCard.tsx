@@ -1,7 +1,12 @@
 import styles from "./ReviewCard.module.scss";
 import icon from "/src/assets/user.png";
 
-export const ReviewSectionCard = ({ text, name }) => {
+interface IReviewSectionCard {
+  text: string;
+  name: string;
+}
+
+export const ReviewSectionCard = ({ text, name }: IReviewSectionCard) => {
   return (
     <div className={styles.reviewCard}>
       <div className={styles.user}>

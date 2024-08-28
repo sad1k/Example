@@ -13,7 +13,7 @@ export const Select = ({ label, defaultValue, options }: ISelect) => {
 
   const [open, setOpen] = useState(false);
 
-  const handleOption = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
+  const handleOption = (e: React.MouseEvent<HTMLUListElement, MouseEvent>) => {
     setSelectedOption((e.target as HTMLElement).innerText);
     setOpen(false);
   };
